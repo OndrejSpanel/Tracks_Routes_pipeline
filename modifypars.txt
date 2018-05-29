@@ -1,0 +1,18 @@
+--drop-author
+
+--drop-version
+
+--modify-tags=
+osmc:symbol=blue* add color=blue
+osmc:symbol=green* add color=green
+osmc:symbol=red* add color=red
+osmc:symbol=yellow* add color=yellow
+osmc:symbol=pink* add color=pink
+osmc:symbol=black* add color=black
+osmc:symbol=white* add color=white
+kct_*=learning add kct_non_major=
+kct_*=minor add kct_non_major=
+kct_*=local add kct_non_major=
+kct_*=other add kct_non_major=
+kct_*=learnind add kct_non_major=learning
+voltage<100000 add high_voltage=no
