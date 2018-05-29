@@ -1,6 +1,7 @@
 prefix=$1
 base="../Map/$prefix"
-echo "Processing $base.osm.pbf"
+echo $base
+echo "Processing ${base}.osm.pbf"
 echo "Adding tags"
 ../bin/osmconvert64 --parameter-file=modifypars.txt "$base.osm.pbf" -o="$base.o5m"
 echo "Filtering"
@@ -14,7 +15,7 @@ echo " tourism"
 set OSM_CONFIG_FILE="./osmconf.ini"
 
 echo "Extracting layers"
-ogr2ogr -f GeoJSON "$base-relations.geojson" "$base-relations.osm" multilinestrings
-ogr2ogr -f GeoJSON "$base-relation-points.geojson" "$base-relations.osm" points
-ogr2ogr -f GeoJSON "$base-power-ways.geojson" "$base-power.osm" lines
-ogr2ogr -f GeoJSON "$base-bus-stops.geojson" "$base-bus-stops.osm" points
+# ogr2ogr -f GeoJSON "$base-relations.geojson" "$base-relations.osm" multilinestrings
+# ogr2ogr -f GeoJSON "$base-relation-points.geojson" "$base-relations.osm" points
+# ogr2ogr -f GeoJSON "$base-power-ways.geojson" "$base-power.osm" lines
+# ogr2ogr -f GeoJSON "$base-bus-stops.geojson" "$base-bus-stops.osm" points
