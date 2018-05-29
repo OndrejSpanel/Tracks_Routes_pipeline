@@ -1,8 +1,10 @@
 #### Prepare OSM input file
 
-File should be named like:
+Place your input files into `../Map` directory
 
-- eu.osm.pbf
+Files should be named like:
+
+- `eu.osm.pbf`
 
 Rename `europe-latest.osm.pbf` to `eu.osm.pbf` or use `osmium merge` to create `eu.pbf` like this:
 
@@ -10,12 +12,8 @@ Rename `europe-latest.osm.pbf` to `eu.osm.pbf` or use `osmium merge` to create `
 
 #### Process file
 
-`.\gen-process.ps1 eu`
-
-#### Create mbtiles in Ubuntu
-
-.\xtile eu
-
+`.\gen-process.sh eu`
+`.\xtile.sh eu`
 
 ## Installation
 
