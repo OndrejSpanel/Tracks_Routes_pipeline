@@ -1,5 +1,4 @@
-prefix=$1
-base="../Map/$prefix"
+base="../Map/$1"
 echo $base
 echo "Processing ${base}.osm.pbf"
 echo "Adding tags"
