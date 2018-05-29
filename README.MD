@@ -1,6 +1,6 @@
 ## Installation
 
-`sudo ./install.sh`
+`./install.sh`
 
 All working folders will be created in `..`
 
