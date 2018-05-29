@@ -37,7 +37,7 @@ Resulting mbtiles:
 
 Convert refrerence file as `eu-ref.o5m`:
 
-`../bin/osmconvert ../Map/czech-republic-180401.osm.pbf -o="../Map/cz-ref.o5m"`
+`../bin/osmconvert ../Map/europe-180401.osm.pbf -o="../Map/eu-ref.o5m"`
 
 Run:
 
