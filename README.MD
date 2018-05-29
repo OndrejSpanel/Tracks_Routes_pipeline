@@ -1,6 +1,14 @@
+## Installation
+
+`sudo ./install.sh`
+
+All working folders will be created in `..`
+
+## Processing
+
 #### Prepare OSM input file
 
-Place your input files into `../Map` directory
+Place your OSM data inside of `../Map` directory.
 
 Files should be named like:
 
@@ -13,44 +21,5 @@ Rename `europe-latest.osm.pbf` to `eu.osm.pbf` or use `osmium merge` to create `
 #### Process file
 
 `.\gen-process.sh eu`
-`.\xtile.sh eu`
-
-## Installation
-
-Following guideline assumes you are working in your home directory
-
-### Install tippecanoe
-
-```
-sudo apt install git
-sudo apt install build-essential libsqlite3-dev zlib1g-dev
-git clone https://github.com/mapbox/tippecanoe
-cd tippecanoe
-make
-cd ..
-```
-
-### Install ogr2ogr / GDAL
-
-`sudo apt install gdal-bin`
-
-### Install osmconvert + osmfilter
-
-```
-mkdir bin
-cd bin
-wget -O - http://m.m.i24.cc/osmfilter.c |cc -x c - -O3 -o osmfilter
-wget http://m.m.i24.cc/osmconvert64
-ln osmconvert64 osmconvert
-chmod 0744 osmconvert
-cd ..
-```
-
-### Clone this repository
-
-`git clone https://github.com/OndrejSpanel/Tracks_Routes_pipeline`
-
-### Create data directory
-
-`mkdir Map`
+`.\xtip.sh eu`
 
