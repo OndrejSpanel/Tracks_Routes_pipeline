@@ -15,6 +15,5 @@ set OSM_CONFIG_FILE="./osmconf.ini"
 
 echo "Extracting layers"
 ogr2ogr -f GeoJSON "$base-relations.geojson" "$base-relations.osm" multilinestrings
-ogr2ogr -f GeoJSON "$base-relation-points.geojson" "$base-relations.osm" points
 ogr2ogr -f GeoJSON "$base-power-ways.geojson" "$base-power.osm" lines
 ogr2ogr -f GeoJSON "$base-bus-stops.geojson" "$base-bus-stops.osm" points
