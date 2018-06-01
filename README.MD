@@ -10,16 +10,14 @@ All working folders will be created in `..`
 
 Place your OSM data inside of `../Map` directory.
 
-File should be named like:
-
-- `eu.osm.pbf`
-
-
-#### Process basic layers (routes, powerlines, bus stops...) file
+File should be named like `eu.osm.pbf`:
 
 Rename `europe-latest.osm.pbf` to `eu.osm.pbf` or use `osmium merge` to create `eu.pbf` like this:
 
-`.\osmium merge ..\canary-islands-latest.osm.pbf ..\europe-latest.osm.pbf -o ..\eu.osm.pbf`
+`osmium merge ..\canary-islands-latest.osm.pbf ..\europe-latest.osm.pbf -o ..\eu.osm.pbf`
+
+#### Process basic layers (routes, powerlines, bus stops...) file
+
 
 Run:
 
@@ -35,7 +33,7 @@ Resulting mbtiles:
 
 #### Process tracks/paths changes
 
-Convert refrerence file as `eu-ref.o5m`:
+Convert reference file as `eu-ref.o5m`:
 
 `../bin/osmconvert ../Map/europe-180401.osm.pbf -o="../Map/eu-ref.o5m"`
 
