@@ -1,3 +1,5 @@
+_Note: This guide assumes you `cd` into directory of this project._
+
 ## Installation
 
 `./install.sh`
@@ -14,15 +16,14 @@ File should be named like `eu.osm.pbf`:
 
 Rename `europe-latest.osm.pbf` to `eu.osm.pbf` or use `osmium merge` to create `eu.pbf` like this:
 
-`osmium merge ..\canary-islands-latest.osm.pbf ..\europe-latest.osm.pbf -o ..\eu.osm.pbf`
+`osmium merge --overwrite ../Map/canary-islands-latest.osm.pbf ../Map/europe-latest.osm.pbf -o ../Map/eu.osm.pbf`
 
 #### Process basic layers (routes, powerlines, bus stops...) file
 
-
 Run:
 
-`.\gen-process.sh eu`
-`.\xtip.sh eu`
+`./gen-process.sh eu`
+`./xtip.sh eu`
 
 Resulting mbtiles: 
 
@@ -36,6 +37,8 @@ Resulting mbtiles:
 Convert reference file as `eu-ref.o5m`:
 
 `../bin/osmconvert ../Map/europe-180401.osm.pbf -o="../Map/eu-ref.o5m"`
+
+Link curent file `europe-latest.osm.pbf` as `eu-curr.osm.pbf`
 
 Run:
 
