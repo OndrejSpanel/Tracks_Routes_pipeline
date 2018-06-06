@@ -11,7 +11,7 @@ echo " power"
 echo " tourism"
 ../bin/osmfilter --parameter-file=filterpars-bus.txt "$base.o5m" -o="$base-bus-stops.osm"
 
-set OSM_CONFIG_FILE="./osmconf.ini"
+export OSM_CONFIG_FILE="./osmconf.ini"
 
 echo "Extracting layers"
 ogr2ogr -f GeoJSON "$base-relations.geojson" "$base-relations.osm" multilinestrings
