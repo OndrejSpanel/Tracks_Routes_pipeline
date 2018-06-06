@@ -22,28 +22,27 @@ Rename `europe-latest.osm.pbf` to `eu.osm.pbf` or use `osmium merge` to create `
 
 Run:
 
-`./gen-process.sh eu`
-`./xtip.sh eu`
+`./xprocess eu`
 
-Resulting mbtiles: 
+Resulting mbtiles will be placed in the folder `eu`: 
 
-- `eu-bus-stops.mbtiles`
-- `eu-power-ways.mbtiles`
-- `eu-tracks.mbtiles`
-- `eu-relations.mbtiles` 
+- `bus-stops.mbtiles`
+- `power-ways.mbtiles`
+- `tracks.mbtiles`
+- `relations.mbtiles` 
 
 #### Process tracks/paths changes
 
 Convert reference file as `eu-ref.o5m`:
 
-`../bin/osmconvert ../Map/europe-180401.osm.pbf -o="../Map/eu-ref.o5m"`
+`../bin/osmconvert ../Map/europe-180401.osm.pbf -o="../Map/eu/ref.o5m"`
 
-Link curent file `europe-latest.osm.pbf` as `eu-curr.osm.pbf`
+Link curent file `europe-latest.osm.pbf` as `eu/curr.osm.pbf`
 
 Run:
 
 `./tracks-process.sh eu`
 
-Resulting mbtiles:
+Resulting mbtiles in the folder `eu``:
 
-- `eu-changes-tracks.mbtiles`
+- `changes-tracks.mbtiles`
