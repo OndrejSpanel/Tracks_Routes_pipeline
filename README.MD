@@ -37,7 +37,7 @@ Convert reference file as `eu-ref.o5m`:
 
 `../bin/osmconvert ../Map/europe-180401.osm.pbf -o="../Map/eu/ref.o5m"`
 
-Link curent file `europe-latest.osm.pbf` as `eu/curr.osm.pbf`
+Link current file `europe-latest.osm.pbf` as `eu/curr.osm.pbf`
 
 Run:
 
