@@ -10,9 +10,10 @@ osmc:symbol=yellow* add color=yellow
 osmc:symbol=pink* add color=pink
 osmc:symbol=black* add color=black
 osmc:symbol=white* add color=white
-kct_*=learning add kct_non_major=
-kct_*=minor add kct_non_major=
-kct_*=local add kct_non_major=
-kct_*=other add kct_non_major=
-kct_*=learnind add kct_non_major=learning
+education=yes add local=yes
+kct_*=learning add local=yes
+kct_*=learnind add local=yes
+kct_*=minor add local=yes
+kct_*=local add local=yes
+kct_*=other add local=yes
 voltage<100000 add high_voltage=no
