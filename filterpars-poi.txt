@@ -11,6 +11,7 @@ amenity=drinking_water
 drinking_water=yes
 tourism=alpine_hut
 information=guidepost
+information=board
 
 --keep-ways=
 
