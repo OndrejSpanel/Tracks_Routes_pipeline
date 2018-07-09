@@ -14,7 +14,7 @@ Place your OSM data inside of `../Map` directory.
 
 File should be named like `eu.osm.pbf`:
 
-Rename `europe-latest.osm.pbf` to `eu.osm.pbf` or use `osmium merge` to create `eu.pbf` like this:
+Rename `europe-latest.osm.pbf` to `eu.osm.pbf` or use `osmium merge` to create `eu.osm.pbf` like this:
 
 `osmium merge --overwrite ../Map/canary-islands-latest.osm.pbf ../Map/europe-latest.osm.pbf -o ../Map/eu.osm.pbf`
 
