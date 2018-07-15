@@ -15,6 +15,9 @@ echo " tourism"
 export OSM_CONFIG_FILE="./osmconf.ini"
 
 echo "Extracting layers"
+rm "$base/relations.geojson"
 ogr2ogr -f GeoJSON "$base/relations.geojson" "$base/relations.osm" multilinestrings
+rm "$base/power-ways.geojson"
 ogr2ogr -f GeoJSON "$base/power-ways.geojson" "$base/power.osm" lines
+rm "$base/poi.geojson"
 ogr2ogr -f GeoJSON "$base/poi.geojson" "$base/poi.osm" points

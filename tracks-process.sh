@@ -4,5 +4,6 @@ base="../Map/$1"
 echo "Filter tracks"
 ../bin/osmfilter --parameter-file=filterpars-tracks.txt "$base/changes.o5c" -o="$base/changes-tracks.osm"
 echo "Convert to Geojson"
+rm "$base/changes-tracks.geojson"
 ogr2ogr -f GeoJSON "$base/changes-tracks.geojson" "$base/changes-tracks.osm" lines
 ./ltip.sh "$base/changes-tracks"
