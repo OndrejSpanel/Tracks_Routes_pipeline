@@ -35,7 +35,7 @@ Resulting mbtiles will be placed in the folder `eu`:
 
 Convert reference file as `eu-ref.o5m`:
 
-`../bin/osmconvert ../Map/europe-180401.osm.pbf -o="../Map/eu/ref.o5m"`
+`./ref-define.sh` eu ../Map/europe-180501.osm.pbf
 
 Link current file `europe-latest.osm.pbf` as `eu/curr.osm.pbf`
 
