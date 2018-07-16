@@ -12,6 +12,7 @@ drinking_water=yes
 tourism=alpine_hut
 information=guidepost
 information=board
+religion=christian
 
 --keep-ways=
 

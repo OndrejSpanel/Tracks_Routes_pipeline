@@ -17,3 +17,5 @@ kct_*=minor add local=yes
 kct_*=local add local=yes
 kct_*=other add local=yes
 voltage<100000 add high_voltage=no
+building=church add religion=christian
+building=chapel add religion=christian
