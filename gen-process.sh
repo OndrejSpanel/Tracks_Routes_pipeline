@@ -21,3 +21,7 @@ rm "$base/power-ways.geojson"
 ogr2ogr -f GeoJSON "$base/power-ways.geojson" "$base/power.osm" lines
 rm "$base/poi.geojson"
 ogr2ogr -f GeoJSON "$base/poi.geojson" "$base/poi.osm" points
+rm "$base/poi-poly.geojson"
+ogr2ogr -f GeoJSON "$base/poi-poly.geojson" "$base/poi.osm" multipolygons
+rm "$base/poi-line.geojson"
+ogr2ogr -f GeoJSON "$base/poi-line.geojson" "$base/poi.osm" lines

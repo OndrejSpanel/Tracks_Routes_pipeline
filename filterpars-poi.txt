@@ -4,19 +4,22 @@
 
 --drop-version
 
+--keep=
+religion=
+amenity=place_of_worship
+building=chapel
+building=church
+tourism=alpine_hut
+
 --keep-nodes=
 highway=bus_stop
 natural=spring
 amenity=drinking_water
 drinking_water=yes
-tourism=alpine_hut
 information=guidepost
 information=board
-religion=christian
 
 --keep-ways=
-religion=christian
-tourism=alpine_hut
 
 --keep-relations=
 
