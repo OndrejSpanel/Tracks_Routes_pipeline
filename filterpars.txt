@@ -14,6 +14,7 @@ route=foot
 route=bicycle
 route=mtb
 route=metro
+route=horse
 
 --drop-tags=
 source=
