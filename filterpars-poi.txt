@@ -18,6 +18,7 @@ amenity=drinking_water
 drinking_water=yes
 information=guidepost
 information=board
+historic=wayside_cross
 
 --keep-ways=
 
