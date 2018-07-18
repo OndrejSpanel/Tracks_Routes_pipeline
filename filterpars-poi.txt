@@ -7,8 +7,6 @@
 --keep=
 religion=
 amenity=place_of_worship
-building=chapel
-building=church
 tourism=alpine_hut
 
 --keep-nodes=
@@ -21,6 +19,10 @@ information=board
 historic=wayside_cross
 
 --keep-ways=
+building=alpine_hut
+building=hotel
+building=chapel
+building=church
 
 --keep-relations=
 
