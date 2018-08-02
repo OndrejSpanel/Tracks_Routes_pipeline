@@ -1,5 +1,7 @@
 cd ..
 
+sudo apt-get update
+
 echo Install tippecanoe
 
 sudo apt-get install build-essential libsqlite3-dev zlib1g-dev -y
