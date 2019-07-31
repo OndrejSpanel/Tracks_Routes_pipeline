@@ -26,9 +26,8 @@ Run:
 
 Resulting mbtiles will be placed in the folder `eu`: 
 
-- `bus-stops.mbtiles`
+- `poi.mbtiles`
 - `power-ways.mbtiles`
-- `tracks.mbtiles`
 - `relations.mbtiles` 
 
 #### Process tracks/paths changes
