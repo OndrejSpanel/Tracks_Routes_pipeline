@@ -12,7 +12,6 @@ tourism=alpine_hut
 --keep-nodes=
 highway=bus_stop
 natural=spring
-natural=peak
 amenity=drinking_water
 drinking_water=yes
 information=guidepost
