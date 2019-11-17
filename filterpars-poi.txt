@@ -8,6 +8,7 @@
 religion=
 amenity=place_of_worship
 tourism=alpine_hut
+historic=memorial
 
 --keep-nodes=
 highway=bus_stop
