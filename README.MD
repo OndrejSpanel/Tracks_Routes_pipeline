@@ -1,5 +1,9 @@
 _Note: This guide assumes you `cd` into directory of this project._
 
+## Prerequisites
+
+Tested with Ubuntu 18.04 LTS Linux Subsystem for Windows 
+
 ## Installation
 
 `./install.sh`
