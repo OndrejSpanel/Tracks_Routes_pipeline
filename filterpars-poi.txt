@@ -24,6 +24,7 @@ building=alpine_hut
 building=hotel
 building=chapel
 building=church
+man_made=cutline
 
 --keep-relations=
 
