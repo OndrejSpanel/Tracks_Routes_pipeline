@@ -8,6 +8,7 @@
 
 --keep-ways=
 power=line
+power=minor_line
 
 --keep-relations=
 
