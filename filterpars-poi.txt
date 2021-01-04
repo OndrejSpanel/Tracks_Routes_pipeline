@@ -25,6 +25,10 @@ building=hotel
 building=chapel
 building=church
 man_made=cutline
+military=range
+military=training_area
+landuse=military
+barrier=fence
 
 --keep-relations=
 
